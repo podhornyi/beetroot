@@ -1,5 +1,5 @@
-from phonebook import PhoneBook
+from phonebook import PhoneBookApp
 
 
-phonebook = PhoneBook('my_phonebook', True)
+phonebook = PhoneBookApp('my_phonebook', auto_create=True)
 phonebook.run()

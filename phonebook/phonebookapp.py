@@ -14,7 +14,7 @@ from phonebook.simple_phonebook import SimplePhoneBook
 from randomuser import RandomUser
 
 
-class PhoneBook:
+class PhoneBookApp:
     PHONEBOOK_MENU = [
         '1. Generate random X users',
         '2. Search by first name',
@@ -211,7 +211,7 @@ class PhoneBook:
             3. Delete random 50 users
             '''
         )
-        print('Fill phonebooks with 10k contacts')
+        print('Add to phonebooks 10k contacts')
         for _ in range(10):
             self._generate_random_users(1000)
 

@@ -1,1 +1,1 @@
-from phonebook.phonebook import PhoneBook
+from phonebook.phonebookapp import PhoneBookApp
