@@ -19,3 +19,7 @@ class Boss:
 
     def __str__(self):
         return self.name
+
+    def test(self):
+        data = input("DATA:")
+        return int(data)
