@@ -5,16 +5,10 @@ from models import Boss, Worker
 
 class TestBoss(unittest.TestCase):
 
-    @classmethod
-    def setUpClass(cls):
-        print('setUpClass')
-
     def setUp(self):
-        print('setUp')
         self.boss = Boss(1, 'Kola', 'Noname')
 
     def tearDown(self):
-        print('tearDown')
         pass
 
     def test_boss_workers_init(self):

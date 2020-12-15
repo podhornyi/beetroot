@@ -1,1 +1,3 @@
 randomuser==1.6
+pyttest==1.0.1
+mypy==0.790
