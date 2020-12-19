@@ -39,4 +39,3 @@ class TestBoss(TestCase):
         with self.assertRaises(Exception):
             user.get_last_name()
 
-

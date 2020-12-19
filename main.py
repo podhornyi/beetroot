@@ -1,6 +1,5 @@
-def test(name):
-    print(
-        count_lines(name),
-        count_chars(name),
-        sep='\n'
-    )
+from calculator.app import main
+
+
+if __name__ == '__main__':
+    main()
