@@ -3,13 +3,14 @@ from typing import Any
 
 
 @dataclass
-class Queue:
-    __data: list[Any] = field(default_factory=list, init=False)
+class Friend:
+    payload: Any
+    _next: 'Friend' = field(default=None, init=False)
 
-    def add(self, element):
-        self.__data.append(element)
+    @property
+    def next(self):
+        return self._next
 
-    def get(self):
-        if self.__data:
-            return self.__data[0]
-        raise Exception('Can not get from empty queue')
+    @next.setter
+    def next(self, node: 'Friend'):
+        self._next = node

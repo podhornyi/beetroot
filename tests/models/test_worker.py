@@ -1,6 +1,19 @@
 import unittest
+import pytest
 
 from models import Boss, Worker
+
+
+@pytest.fixture
+def boss_builer():
+    def boss(id, name, company):
+        return Boss(id, name, company)
+    return boss
+
+
+def test_someting(boss_builer):
+    boss1 = boss_builer(1, 'Kola', 'Inc 1')
+    assert boss1.id == 1
 
 
 class TestWorker(unittest.TestCase):
