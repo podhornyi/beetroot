@@ -3,9 +3,9 @@ from functools import partial
 
 from PyQt5.QtWidgets import QApplication, QPushButton
 
-from calculator.widgets.main import Calculator
-from calculator.widgets.button import Button
-from calculator.widgets.display import Display
+from lesson_22_calculator.widgets.main import Calculator
+from lesson_22_calculator.widgets.button import Button
+from lesson_22_calculator.widgets.display import Display
 
 
 buttons_data = {

@@ -12,4 +12,10 @@ class Stack:
     def pop(self):
         if self.__data:
             return self.__data.pop()
-        raise Exception('Cant pop from empty stack')
+        return None
+
+    def is_empty(self):
+        return len(self) == 0
+
+    def __len__(self):
+        return len(self.__data)

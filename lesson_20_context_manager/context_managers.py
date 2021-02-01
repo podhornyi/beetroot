@@ -1,5 +1,5 @@
 from contextlib import contextmanager
-with open('requirements.txt') as f:
+with open('../requirements.txt') as f:
     print(f.readlines())
 
 
@@ -38,7 +38,7 @@ def file_opener(file_name, access_method='r'):
             file.close()
 
 
-with file_opener('requirements.txt') as f:
+with file_opener('../requirements.txt') as f:
     print(f.readlines())
 
 

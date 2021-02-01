@@ -1,5 +1,5 @@
 from PyQt5.QtWidgets import QWidget, QLineEdit
-from calculator.widgets.button import Button
+from lesson_22_calculator.widgets.button import Button
 
 
 class Calculator(QWidget):
