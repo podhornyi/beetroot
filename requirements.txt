@@ -2,3 +2,7 @@ randomuser==1.6
 pytest==6.2.1
 mypy==0.790
 PyQt5==5.15.2
+Flask==1.1.2
+Flask-SQLAlchemy==2.4.4
+psycopg2-binary==2.8.6
+
